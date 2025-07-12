@@ -1,165 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>VMalwares's Discord Bots</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Malware Project Site</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-  body {
-    margin: 0;
-    font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-    color: #fff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-  header {
-    background: #0b1422cc;
-    padding: 1.5rem 2rem;
-    text-align: center;
-    box-shadow: 0 0 10px #fdbb2d;
-  }
+    header {
+      background: #0b1422cc;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 0 10px #fdbb2d;
+    }
 
-  header h1 {
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-    color: #fdbb2d;
-    text-shadow: 0 0 8px #fdbb2d;
-  }
-
-  .gif-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .gif-gallery img {
-    max-width: 200px;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #fdbb2d;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-
-  .gif-gallery img:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 0 25px #ffd93b;
-  }
-
-  main {
-    flex-grow: 1;
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  main h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #ffd93b;
-    text-shadow: 0 0 6px #ffd93b;
-  }
-
-  .bot-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-  }
-
-  .bot-card {
-    background: #0b1422cc;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 0 12px #fdbb2d;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: box-shadow 0.3s ease;
-  }
-
-  .bot-card:hover {
-    box-shadow: 0 0 25px #ffd93b;
-  }
-
-  .bot-pfp {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    box-shadow: 0 0 12px #fdbb2d;
-    align-self: center;
-  }
-
-  .bot-name {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #fdbb2d;
-    text-shadow: 0 0 6px #fdbb2d;
-    text-align: center;
-  }
-
-  .bot-desc {
-    flex-grow: 1;
-    margin-bottom: 1.5rem;
-    color: #eee;
-    text-align: center;
-  }
-
-  .bot-invite {
-    text-align: center;
-  }
-
-  .bot-invite a {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: #1a1a1a;
-    background: #fdbb2d;
-    border-radius: 30px;
-    box-shadow: 0 0 8px #fdbb2d;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .bot-invite a:hover {
-    background: #ffd93b;
-    box-shadow: 0 0 20px #ffd93b;
-  }
-
-  footer {
-    background: #0b1422cc;
-    padding: 1rem 2rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #ccc;
-    box-shadow: 0 -3px 10px #fdbb2d;
-  }
-
-  @media (max-width: 480px) {
     header h1 {
-      font-size: 1.8rem;
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin: 0;
+      color: #fdbb2d;
+      text-shadow: 0 0 8px #fdbb2d;
     }
+
+    .gif-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .gif-gallery img {
+      max-width: 200px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #fdbb2d;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gif-gallery img:hover {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 0 25px #ffd93b;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
     main h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ffd93b;
+      text-shadow: 0 0 6px #ffd93b;
     }
-  }
-</style>
+
+    .featured-gif {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .featured-gif img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #fdbb2d;
+    }
+
+    footer {
+      background: #0b1422cc;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+      box-shadow: 0 -3px 10px #fdbb2d;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      main h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Vegito's Discord Bots</h1>
+    <h1>Malware Project Site</h1>
   </header>
 
   <section class="gif-gallery" aria-label="Vegito GIFs from Tenor">
@@ -169,32 +114,15 @@
   </section>
 
   <main>
-    <h2>Your Discord Bots</h2>
-    <div class="bot-cards">
-      <article class="bot-card">
-        <img src="https://i.pinimg.com/736x/45/69/17/4569172ec779ea616cefebe907ab9c65.jpg" alt="Bot One Profile Picture" class="bot-pfp" />
-        <div class="bot-name">Bot One</div>
-        <p class="bot-desc">Description for Bot One. This bot helps you moderate your server with ease and has lots of fun commands.</p>
-        <div class="bot-invite"><a href="https://discord.com/oauth2/authorize?client_id=1391912301950537828&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer">Invite Bot One</a></div>
-      </article>
-
-      <article class="bot-card">
-        <img src="https://i.pinimg.com/736x/b4/4b/5b/b44b5b8bb393b7405924d37f5e446d4f.jpg" alt="Bot Two Profile Picture" class="bot-pfp" />
-        <div class="bot-name">Bot Two</div>
-        <p class="bot-desc">Description for Bot Two. It offers music playback and custom playlists for your community.</p>
-        <div class="bot-invite"><a href="https://discord.com/oauth2/authorize?client_id=1393431770388627476&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer">Invite Bot Two</a></div>
-      </article>
-
-      <article class="bot-card">
-        <div class="bot-name">Bot Three</div>
-        <p class="bot-desc">Description for Bot Three. Get real-time game stats and fun interactive commands with this bot.</p>
-        <div class="bot-invite"><a href="#" target="_blank" rel="noopener noreferrer">Invite Bot Three</a></div>
-      </article>
+    <h2>Featured Bot Showcase</h2>
+    <div class="featured-gif">
+      <img src="https://media.tenor.com/VqsNmW0-63kAAAAC/ultra-ui-goku-goku-ui.gif" alt="Ultra Instinct Goku UI Showcase" />
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Vegito Bots Showcase. Crafted with Saiyan Spirit.
+    &copy; 2025 Malware Project Site. Powered by Saiyan Energy.
   </footer>
 </body>
 </html>
+
