@@ -2,114 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SSJ Goku Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSJ Goku - Moderation Dashboard</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url("https://media1.tenor.com/m/0Tk6x17cIHUAAAAC/goku-super-saiyajin.gif") no-repeat center center fixed;
-      background-size: cover;
+      font-family: Arial, sans-serif;
+      background: black url("https://media1.tenor.com/m/aRB2giSsS0QAAAAC/goku-super-saiyan.gif") center/cover no-repeat;
       color: white;
-      text-align: center;
     }
-
-    .overlay {
-      background: rgba(0, 0, 0, 0.7);
-      min-height: 100vh;
-      padding: 40px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      margin-bottom: 10px;
-      color: #facc15;
-      text-shadow: 0 0 10px #facc15;
-    }
-
-    p.subtitle {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .invite-button {
-      background: linear-gradient(45deg, #facc15, #f59e0b);
-      color: black;
-      padding: 15px 35px;
-      font-size: 1.3rem;
-      border: none;
-      border-radius: 12px;
-      text-decoration: none;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 15px #facc15;
-    }
-
-    .invite-button:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 25px #facc15;
-    }
-
-    .changelog {
-      background: rgba(255, 255, 255, 0.05);
-      margin-top: 50px;
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+      border-bottom: 1px solid #444;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      text-transform: lowercase;
+      font-size: 1rem;
+    }
+    section {
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.75);
+      margin: 20px;
       border-radius: 10px;
-      max-width: 600px;
-      width: 100%;
     }
-
-    .changelog h2 {
-      margin-top: 0;
-      color: #fbbf24;
+    .card {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 10px 0;
     }
-
-    .version {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .footer {
-      margin-top: 40px;
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
       font-size: 0.9rem;
-      opacity: 0.6;
     }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.2rem;
-      }
-
-      .invite-button {
-        font-size: 1rem;
-        padding: 12px 25px;
-      }
+    .changelog {
+      background-color: #111;
+      border-left: 4px solid #f00;
+      padding: 15px;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>⚡ SSJ Goku Bot</h1>
-    <p class="subtitle">Revamped and ready to power up your server.</p>
+  <header>ssj goku bot dashboard</header>
+  <nav>
+    <a href="#mod">moderation panel</a>
+    <a href="#logs">dm logs</a>
+    <a href="#changelog">changelog</a>
+  </nav>
 
-    <a
-      href="https://discord.com/oauth2/authorize?client_id=1391912301950537828&permissions=8&integration_type=0&scope=bot"
-      target="_blank"
-      class="invite-button"
-    >➕ Invite SSJ Goku Bot</a>
+  <section id="mod">
+    <h2>moderation panel</h2>
+    <div class="card">warn user</div>
+    <div class="card">mute user</div>
+    <div class="card">ban user</div>
+    <div class="card">kick user</div>
+    <div class="card">clear messages</div>
+    <p style="font-size: 0.9rem; color: gray">* moderation actions are only available through the discord bot interface</p>
+  </section>
 
+  <section id="logs">
+    <h2>dm logs</h2>
+    <div class="card">display of latest dm logs from dm_logs.txt (feature coming soon)</div>
+  </section>
+
+  <section id="changelog">
+    <h2>changelog</h2>
     <div class="changelog">
-      <h2>📝 Changelog</h2>
-      <div class="version">Version 1.4</div>
-      <ul>
-        <li>🔁 Bot was completely revamped</li>
-      </ul>
+      <strong>version 1.4</strong><br />
+      - bot was revamped
+      <br />
+      - moderation commands improved
+      <br />
+      - dm logging added
     </div>
+  </section>
 
-    <div class="footer">Not for weaklings. © 2025</div>
-  </div>
+  <footer>
+    ssj goku bot &copy; 2025 - dashboard built with html/css
+  </footer>
 </body>
 </html>
