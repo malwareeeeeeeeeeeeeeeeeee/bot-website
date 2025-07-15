@@ -1,99 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SSJ Goku - Moderation Dashboard</title>
+  <meta charset="UTF-8">
+  <title>Goku Bot – Invite Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: black url("https://media1.tenor.com/m/aRB2giSsS0QAAAAC/goku-super-saiyan.gif") center/cover no-repeat;
-      color: white;
+      padding: 0;
+      box-sizing: border-box;
     }
-    header {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 20px;
-      text-align: center;
-      font-size: 2rem;
-      text-transform: uppercase;
-      border-bottom: 1px solid #444;
-    }
-    nav {
+
+    body {
+      font-family: 'Oxanium', sans-serif;
+      background: url('https://media1.tenor.com/m/iVccUe5ff7UAAAAC/goku-capsule-corp.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      backdrop-filter: blur(4px);
+      min-height: 100vh;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      padding: 15px;
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      text-transform: lowercase;
-      font-size: 1rem;
-    }
-    section {
-      padding: 30px;
-      background-color: rgba(0, 0, 0, 0.75);
-      margin: 20px;
-      border-radius: 10px;
-    }
-    .card {
-      background-color: #222;
+      align-items: center;
       padding: 20px;
-      border-radius: 8px;
-      margin: 10px 0;
     }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 800px;
+      width: 100%;
+      border: 2px solid #00aaff;
+      box-shadow: 0 0 20px #00aaff66;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #00c8ff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00c8ff;
+      color: #000;
+      font-size: 1.1rem;
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+      margin-bottom: 35px;
+    }
+
+    .btn:hover {
+      background: #0094c9;
+      transform: scale(1.05);
+    }
+
+    .changelog {
+      text-align: left;
+      padding: 20px;
+      border: 2px solid #00c8ff;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .changelog h2 {
+      color: #00c8ff;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .changelog ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .changelog li {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
     footer {
       text-align: center;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.7);
-      font-size: 0.9rem;
-    }
-    .changelog {
-      background-color: #111;
-      border-left: 4px solid #f00;
-      padding: 15px;
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: #aaaaaa;
     }
   </style>
 </head>
 <body>
-  <header>ssj goku bot dashboard</header>
-  <nav>
-    <a href="#mod">moderation panel</a>
-    <a href="#logs">dm logs</a>
-    <a href="#changelog">changelog</a>
-  </nav>
 
-  <section id="mod">
-    <h2>moderation panel</h2>
-    <div class="card">warn user</div>
-    <div class="card">mute user</div>
-    <div class="card">ban user</div>
-    <div class="card">kick user</div>
-    <div class="card">clear messages</div>
-    <p style="font-size: 0.9rem; color: gray">* moderation actions are only available through the discord bot interface</p>
-  </section>
+  <div class="container">
+    <h1>Goku Bot</h1>
+    <p>
+      Built for servers that need more than moderation. Goku Bot blends powerful admin tools with responsive features inspired by Dragon Ball Legends, keeping your community active, secure, and fun.
+    </p>
 
-  <section id="logs">
-    <h2>dm logs</h2>
-    <div class="card">display of latest dm logs from dm_logs.txt (feature coming soon)</div>
-  </section>
+    <a href="https://discord.com/oauth2/authorize?client_id=1391912301950537828&permissions=8&scope=bot" class="btn" target="_blank">
+      Invite to Discord
+    </a>
 
-  <section id="changelog">
-    <h2>changelog</h2>
     <div class="changelog">
-      <strong>version 1.4</strong><br />
-      - bot was revamped
-      <br />
-      - moderation commands improved
-      <br />
-      - dm logging added
+      <h2>Changelog</h2>
+      <ul>
+        <li><strong>v1.5</strong> – Full bot rewrite. moer commands, better stability, and UI upgrades.</li>
+        <li>v1.4 – Added battle system with animated outcome previews.</li>
+        <li>v1.3 – Custom rarity-based summon messages with image embeds.</li>
+        <li>v1.2 – Auto-response to keywords.</li>
+        <li>v1.1 – First stable build with logging, moderation, and embed utilities.</li>
+      </ul>
     </div>
-  </section>
 
-  <footer>
-    ssj goku bot &copy; 2025 - dashboard built with html/css
-  </footer>
+    <footer>
+      &copy; 2025 Goku Bot Team. All rights reserved.
+    </footer>
+  </div>
+
 </body>
 </html>
