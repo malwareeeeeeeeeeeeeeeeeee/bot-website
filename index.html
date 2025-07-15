@@ -3,125 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malware Bot Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <title>SSJ Goku Bot</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: url("https://media1.tenor.com/m/FSkBJQ_R5P8AAAAd/anime-goku.gif") no-repeat center center fixed;
+      font-family: 'Segoe UI', sans-serif;
+      background: url("https://media1.tenor.com/m/0Tk6x17cIHUAAAAC/goku-super-saiyajin.gif") no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
+      color: white;
+      text-align: center;
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.7);
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 40px 20px;
-    }
-
-    .container {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 30px 40px;
-      max-width: 800px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 0 30px rgba(0,0,0,0.6);
-      backdrop-filter: blur(8px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       margin-bottom: 10px;
-      color: #00ffff;
+      color: #facc15;
+      text-shadow: 0 0 10px #facc15;
     }
 
-    p {
+    p.subtitle {
       font-size: 1.2rem;
       margin-bottom: 30px;
     }
 
-    .btn {
-      background: #00ffff;
-      color: #000;
-      padding: 12px 24px;
-      border-radius: 10px;
-      font-size: 1rem;
+    .invite-button {
+      background: linear-gradient(45deg, #facc15, #f59e0b);
+      color: black;
+      padding: 15px 35px;
+      font-size: 1.3rem;
+      border: none;
+      border-radius: 12px;
       text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 15px #facc15;
+    }
+
+    .invite-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #facc15;
+    }
+
+    .changelog {
+      background: rgba(255, 255, 255, 0.05);
+      margin-top: 50px;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .changelog h2 {
+      margin-top: 0;
+      color: #fbbf24;
+    }
+
+    .version {
       font-weight: bold;
-      transition: 0.3s;
+      margin-bottom: 10px;
     }
 
-    .btn:hover {
-      background: #fff;
-      color: #111;
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.6;
     }
 
-    .section {
-      margin-top: 30px;
-      text-align: left;
-    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
 
-    .section h2 {
-      color: #00ffff;
-      border-bottom: 1px solid #00ffff;
-      padding-bottom: 5px;
-    }
-
-    .section ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .section li {
-      margin: 8px 0;
-    }
-
-    @media screen and (max-width: 768px) {
-      h1 { font-size: 2rem; }
-      p { font-size: 1rem; }
-      .container { padding: 20px; }
+      .invite-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="overlay">
-    <div class="container">
-      <h1>ULTRA Ui Goku</h1>
-      <p>An all-in-one Discord bot with power levels beyond the limits.</p>
-      <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1391912301950537828&permissions=8&integration_type=0&scope=bot" target="_blank">Invite Bot</a>
+    <h1>⚡ SSJ Goku Bot</h1>
+    <p class="subtitle">Revamped and ready to power up your server.</p>
 
-      <div class="section">
-        <h2>📜 Commands</h2>
-        <ul>
-          <li><strong>!combo</strong> — Bans a user</li>
-          <li><strong>!say</strong> — In progress</li>
-          <li><strong>!Battle</strong> — battles a user </li>
-          <li><strong>!kick</strong> — kicks a member</li>
-          <li><strong>!goku</strong> — Wont function atm</li>
-        </ul>
-      </div>
+    <a
+      href="https://discord.com/oauth2/authorize?client_id=1391912301950537828&permissions=8&integration_type=0&scope=bot"
+      target="_blank"
+      class="invite-button"
+    >➕ Invite SSJ Goku Bot</a>
 
-      <div class="section">
-        <h2>🧪 Changelog</h2>
-        <ul>
-         <li><strong>v1.3</strong> – Complete overhaul with new embeds and more commands. </li>
-          <li><strong>v1.2</strong> – UI overhaul + mobile support</li>
-          <li><strong>v1.1</strong> – Added custom commands and embed replies</li>
-          <li><strong>v1.0</strong> – Bot created.</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>👤 About</h2>
-        <p>Created by <strong>malwareds</strong> — built for power, chaos, and fun.<br>
-        This project is hosted on <a style="color:#00ffff;" href="https://github.com/malwareeeeeeeeeeeeeeeeeee" target="_blank">GitHub</a>.</p>
-      </div>
+    <div class="changelog">
+      <h2>📝 Changelog</h2>
+      <div class="version">Version 1.4</div>
+      <ul>
+        <li>🔁 Bot was completely revamped</li>
+      </ul>
     </div>
+
+    <div class="footer">Not for weaklings. © 2025</div>
   </div>
 </body>
 </html>
