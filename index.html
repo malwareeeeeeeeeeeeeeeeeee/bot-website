@@ -1,127 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Goku Bot – Invite Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Oxanium', sans-serif;
-      background: url("https://media1.tenor.com/m/ZDTBoUlD8W0AAAAC/songoku-goku.gif") no-repeat center center fixed;
-      background-size: cover;
-      color: #ffffff;
-      backdrop-filter: blur(4px);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .container {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 40px;
-      border-radius: 15px;
-      max-width: 800px;
-      width: 100%;
-      border: 2px solid #00aaff;
-      box-shadow: 0 0 20px #00aaff66;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      color: #00c8ff;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #00c8ff;
-      color: #000;
-      font-size: 1.1rem;
-      padding: 14px 30px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s ease, transform 0.3s ease;
-      margin-bottom: 35px;
-    }
-
-    .btn:hover {
-      background: #0094c9;
-      transform: scale(1.05);
-    }
-
-    .changelog {
-      text-align: left;
-      padding: 20px;
-      border: 2px solid #00c8ff;
-      border-radius: 10px;
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-
-    .changelog h2 {
-      color: #00c8ff;
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-
-    .changelog ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .changelog li {
-      margin-bottom: 8px;
-      font-size: 0.95rem;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 0.8rem;
-      color: #aaaaaa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegito Bot Commands</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url("https://i.pinimg.com/originals/a5/d9/0d/a5d90d7e407ccf33ccbbde8a3bc02ebe.gif") no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            max-width: 900px;
+            margin: 50px auto;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #00bfff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        code {
+            background-color: #222;
+            padding: 4px 8px;
+            border-radius: 5px;
+            color: #0f0;
+        }
+    </style>
 </head>
 <body>
-
-  <div class="container">
-    <h1>Goku Bot</h1>
-    <p>
-      Built for servers that need more than moderation. Goku Bot blends powerful admin tools with responsive features inspired by Dragon Ball Legends, keeping your community active, secure, and fun.
-    </p>
-
-    <a href="https://discord.com/oauth2/authorize?client_id=1391912301950537828&permissions=8&scope=bot" class="btn" target="_blank">
-      Invite to Discord
-    </a>
-
-    <div class="changelog">
-      <h2>Changelog</h2>
-      <ul>
-        <li><strong>v1.5</strong> – Full bot rewrite. moer commands, better stability, and UI upgrades.</li>
-        <li>v1.4 – Added battle system with animated outcome previews.</li>
-        <li>v1.3 – Custom rarity-based summon messages with image embeds.</li>
-        <li>v1.2 – Auto-response to keywords.</li>
-        <li>v1.1 – First stable build with logging, moderation, and embed utilities.</li>
-      </ul>
+    <div class="container">
+        <h1>Vegito Bot Commands</h1>
+        <ul>
+            <li><code>,clear &lt;amount&gt;</code> - Delete messages</li>
+            <li><code>,warn &lt;user&gt; &lt;reason&gt;</code> - Warn a user</li>
+            <li><code>,warns &lt;user&gt;</code> - View user warnings</li>
+            <li><code>,timeout &lt;user&gt; &lt;minutes&gt; &lt;reason&gt;</code> - Timeout user</li>
+            <li><code>,untimeout &lt;user&gt;</code> - Remove timeout</li>
+            <li><code>,kick &lt;user&gt; &lt;reason&gt;</code> - Kick user</li>
+            <li><code>,ban &lt;user&gt; &lt;reason&gt;</code> - Ban user</li>
+            <li><code>,unban &lt;user&gt;</code> - Unban user</li>
+            <li><code>,dm &lt;user&gt; &lt;message&gt;</code> - Send DM to user</li>
+            <li><code>,viewlogs</code> - View moderation logs</li>
+            <li><code>,say &lt;channel_id&gt; &lt;message&gt;</code> - Send a message to a channel by ID</li>
+            <li><code>,r &lt;role_name&gt;</code> - Add role by name or shortcut</li>
+            <li><code>,iq</code> - Shows IQ</li>
+            <li><code>,rate &lt;thing&gt;</code> - Rate anything out of 10</li>
+            <li><code>,update</code> - Show update message</li>
+            <li><code>,roleadd &lt;user&gt; &lt;role&gt;</code> - Force add role</li>
+        </ul>
+        <p style="text-align:center; font-size:0.9em; color:#aaa">Vegito themed Discord bot by Malwared</p>
     </div>
-
-    <footer>
-      &copy; Made By malawared 2025.
-    </footer>
-  </div>
-
 </body>
 </html>
